@@ -16,3 +16,14 @@ let anyBill = 100;
 let anyTip = calculateTip(anyBill);
 console.log(`the bill was $${anyBill}, the tip was $${anyTip}, the total altogether $${anyBill + anyTip}`);
 
+// Task 4 Utilize Arrays
+
+const bills = [275,40,430,125,555,44];
+const tips = bills.map(billsize => calculateTip(billsize));
+const totals = bills.map((billsize, index) => billsize + tips[index]);
+
+console.log("Bills:",bills);
+console.log("Tips:",tips);
+console.log("Totals:",totals);
+
+
